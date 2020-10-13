@@ -1,3 +1,8 @@
+/**
+ * @Author: Wandratsch David, 3BHIT
+ * @Date: 13.10.2020
+ */
+
 import java.util.Scanner;
 
 public class Main
@@ -11,22 +16,62 @@ public class Main
         double x;
         double y;
         double result;
+        int operation;
 
         try {
-            System.out.println("Bitte geben Sie folgende Werte ein:");
-            System.out.println("1. Wert");
-            x = sc.nextDouble();
+            System.out.println("1: Addition");
+            System.out.println("2: Subtraktion");
+            System.out.println("3: Multiplikation");
+            System.out.println("4: Division");
+            System.out.println("Geben Sie bitte die jeweilige Zahl für die gewünschte Rechenoperation ein: ");
+            operation = sc.nextInt();
 
-            System.out.println("2. Wert");
-            y = sc.nextDouble();
+            try {
+                System.out.println("Bitte geben Sie folgende Werte ein:");
+                System.out.println("1. Wert");
+                x = sc.nextDouble();
 
-            result = x + y;
-            System.out.println("Das Ergebnis lautet: " + result);
+                System.out.println("2. Wert");
+                y = sc.nextDouble();
+
+                switch (operation)
+                {
+                    case 1:
+                        System.out.println("Addition");
+                        result = x + y;
+                        System.out.println("Das Ergebnis lautet: " + result);
+                        break;
+
+                    case 2:
+                        System.out.println("Subtraktion");
+                        result = x - y;
+                        System.out.println("Das Ergebnis lautet: " + result);
+                        break;
+
+                    case 3:
+                        System.out.println("Multiplikation");
+                        result = x * y;
+                        System.out.println("Das Ergebnis lautet: " + result);
+                        break;
+
+                    case 4:
+                        System.out.println("Division");
+                        result = x / y;
+                        System.out.println("Das Ergebnis lautet: " + result);
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                System.out.println("Ungültige Eingabe!!!");
+                System.out.println("Bitte geben Sie nur Zahlen ein!!!");
+
+            }
         }
         catch (Exception e)
         {
             System.out.println("Ungültige Eingabe!!!");
-            System.out.println("Bitte geben Sie nur Zahlen ein!!!");
+            System.out.println("Bitte geben Sie eine Zahl von 1-4 ein!!!");
         }
     }
 }
