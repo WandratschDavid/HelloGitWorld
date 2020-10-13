@@ -4,8 +4,10 @@ public class Main
 {
     public static void main(String[] args)
     {
+        //Scanner for the user input
         Scanner sc = new Scanner(System.in);
 
+        //Creating variables
         double x;
         double y;
         double result;
