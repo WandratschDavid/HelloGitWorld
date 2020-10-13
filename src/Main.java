@@ -20,6 +20,7 @@ public class Main
         int operation;
 
         try {
+            //listing all the different operations
             System.out.println("1: Addition");
             System.out.println("2: Subtraktion");
             System.out.println("3: Multiplikation");
@@ -28,6 +29,7 @@ public class Main
             operation = sc.nextInt();
 
             try {
+                //asking the user for the value of the variables
                 System.out.println("Bitte geben Sie folgende Werte ein:");
                 System.out.println("1. Wert");
                 x = sc.nextDouble();
@@ -67,6 +69,7 @@ public class Main
             }
             catch (Exception e)
             {
+                //telling the user about a false input
                 System.out.println("Ungültige Eingabe!!!");
                 System.out.println("Bitte geben Sie nur Zahlen ein!!!");
 
@@ -74,6 +77,7 @@ public class Main
         }
         catch (Exception e)
         {
+            //telling the user about a false input
             System.out.println("Ungültige Eingabe!!!");
             System.out.println("Bitte geben Sie eine Zahl von 1-4 ein!!!");
         }
