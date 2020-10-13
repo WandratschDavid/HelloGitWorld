@@ -15,6 +15,7 @@ public class Main
         //Creating variables
         double x;
         double y;
+        double z;
         double result;
         int operation;
 
@@ -34,29 +35,32 @@ public class Main
                 System.out.println("2. Wert");
                 y = sc.nextDouble();
 
+                System.out.println("3. Wert");
+                z = sc.nextDouble();
+
                 switch (operation)
                 {
                     case 1:
-                        System.out.println("Addition");
-                        result = x + y;
+                        System.out.println("Addition!");
+                        result = x + y + z;
                         System.out.println("Das Ergebnis lautet: " + result);
                         break;
 
                     case 2:
-                        System.out.println("Subtraktion");
-                        result = x - y;
+                        System.out.println("Subtraktion!");
+                        result = x - y - z;
                         System.out.println("Das Ergebnis lautet: " + result);
                         break;
 
                     case 3:
-                        System.out.println("Multiplikation");
-                        result = x * y;
+                        System.out.println("Multiplikation!");
+                        result = x * y * z;
                         System.out.println("Das Ergebnis lautet: " + result);
                         break;
 
                     case 4:
-                        System.out.println("Division");
-                        result = x / y;
+                        System.out.println("Division!");
+                        result = x / y / z;
                         System.out.println("Das Ergebnis lautet: " + result);
                         break;
                 }
